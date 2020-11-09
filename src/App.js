@@ -2,14 +2,17 @@ import 'semantic-ui-css/semantic.min.css'
 
 import Navbar from './components/Navbar'
 import Header from './components/Header'
-import Pictures from './components/Pictures';
+import PictureContainer from './components/PictureContainer';
+import Pictures from './components/Pictures'
 
 function App() {
   return (
     <>
       <Navbar />
       <Header />
-      <Pictures />
+      <PictureContainer>
+        <Pictures />
+      </PictureContainer>
     </>
   );
 }
