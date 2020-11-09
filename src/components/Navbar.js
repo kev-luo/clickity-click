@@ -8,7 +8,9 @@ const styles={
     padding: '1.5rem 20px',
     color: 'white',
     position: 'fixed',
-    width: '100%'
+    width: '100%',
+    boxShadow: '0px 4px 5px 5px rgba(0,0,0,0.48)',
+    zIndex:'1'
   }
 }
 
@@ -19,6 +21,5 @@ export default function Navbar() {
       <div>Hello</div>
       <div>Hello</div>
     </nav>
-
   );
 }
