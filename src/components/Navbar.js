@@ -1,31 +1,24 @@
-import React, { Component } from 'react'
-import { Menu, Segment } from 'semantic-ui-react'
+import React from "react";
 
-export default class Navbar extends Component {
-  state = { activeItem: 'home' }
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
-  render() {
-    const { activeItem } = this.state
-
-    return (
-      <Segment inverted>
-        <Menu inverted secondary widths={3}>
-          <Menu.Item
-            name='home'
-            active={activeItem === 'home'}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name='You Guessed'
-          />
-          <Menu.Item
-            name='Top Score'
-          />
-        </Menu>
-      </Segment>
-    )
+const styles={
+  navbar: {
+    backgroundColor: 'blue',
+    display: 'flex',
+    justifyContent: 'space-between',
+    padding: '1.5rem 20px',
+    color: 'white',
+    position: 'fixed',
+    width: '100%'
   }
 }
 
+export default function Navbar() {
+  return (
+    <nav style={styles.navbar}>
+      <div>Hello</div>
+      <div>Hello</div>
+      <div>Hello</div>
+    </nav>
+
+  );
+}
