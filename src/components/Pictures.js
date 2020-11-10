@@ -1,4 +1,5 @@
 import React from 'react'
+import './css/pictures.css'
 
 export default function Pictures(props) {
 
@@ -31,15 +32,15 @@ export default function Pictures(props) {
   let displayPics = picArray.map(pic => {
     return (
       <div>
-        <img src={`${process.env.PUBLIC_URL}/images/${pic}`} />
+        <img src={`${process.env.PUBLIC_URL}/images/${pic}`} className='picCard'/>
       </div>
     )
   })
 
   return (
-    <div>
+    <>
       { picShuffle(displayPics) }
-    </div>
+    </>
   )
 }
 

@@ -1,0 +1,25 @@
+.picContainer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 2rem 3rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+@media(max-width: 992px) {
+  .picContainer {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media(max-width: 768px) {
+  .picContainer {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media(max-width: 576px) {
+  .picContainer {
+    grid-template-columns: repeat(1, auto);
+  }
+}

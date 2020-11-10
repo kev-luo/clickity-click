@@ -1,0 +1,26 @@
+.background {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+}
+
+.title {
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+}
+
+.subtitle {
+  top: 65%;
+  left: 50%;
+}
+
+.text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}

@@ -1,13 +1,11 @@
 import React from 'react'
 import Pictures from './Pictures'
+import './css/picContainer.css'
 
 export default function PictureContainer() {
-  function randomPic() {
-    // let randomNum = Math.floor(Math.random() * 13);
 
-  }
   return (
-    <div>
+    <div className='picContainer'>
       <Pictures/>
     </div>
   )
