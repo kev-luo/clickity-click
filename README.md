@@ -1,3 +1,5 @@
+**'to collect data from multiple children, or to have two child components communicate with each other, you need to declare the shared state in their parent component. the parent component can pass the state back down to the children by using props. this keeps the child component in sync with each other and with the parent component.'**
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
