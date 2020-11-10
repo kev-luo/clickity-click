@@ -1,7 +1,7 @@
 import React from 'react'
 import './css/pictures.css'
 
-export default function Pictures({ images }) {
+export default function Pictures({ images, handleClick }) {
   function picShuffle(picArray) {
     let arrLength = picArray.length;
     for (let i=arrLength-1; i>0; i--) {
@@ -15,7 +15,7 @@ export default function Pictures({ images }) {
 
   let randomizedImages = picShuffle(images).map(image => {
     return (
-      <img className="picCard" key={image.id} src={image.url}/>
+      <img className="picCard" key={image.id} src={image.url} onClick={() => handleClick(image.id)}/>
     )
   });
 

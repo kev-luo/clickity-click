@@ -12,12 +12,23 @@ function App() {
   const [score, setScore] = useState(0);
   const [topScore, setTopScore] = useState(0);
 
+  function handleClick(id) {
+    let updateData = data.map(img => {
+      if (img.id === id) {
+        img.clicked = true
+      }
+      return img
+    })
+    setData(updateData)
+    console.log(data)
+  }
+
   return (
     <>
       <Navbar score={ score } topScore={ topScore }/>
       <Header />
       <PictureContainer>
-        <Pictures  images={ data } />
+        <Pictures images={ data } handleClick={handleClick}/>
       </PictureContainer>
     </>
   );
