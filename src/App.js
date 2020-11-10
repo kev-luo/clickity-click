@@ -25,11 +25,11 @@ function App() {
   const [score, setScore] = useState(0);
   const [topScore, setTopScore] = useState(0);
 
-  function handleClick() {
+  function handleClick(items) {
     setData([
       ...data,
       {
-        id: 1
+        id: items
       }
     ])
   }
@@ -38,7 +38,7 @@ function App() {
     <>
       <Navbar score={ score } topScore={ topScore }/>
       <Header />
-      <PictureContainer images={ data }/>
+      <PictureContainer images={ data } />
     </>
   );
 }
