@@ -4,13 +4,11 @@
   gap: 2rem 3rem;
   justify-content: center;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .shake {
-  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97)both;
-  transform: translate3d(0,0,0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  animation: shake 0.82s;
 }
 
 @keyframes shake {

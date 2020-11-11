@@ -1,14 +1,24 @@
-.navbar {
-  background-color: blue;
+.navigation {
+  background-color: rgb(153, 38, 0);
   display: flex;
   justify-content: space-between;
-  padding: 2rem 20px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: white;
   position: fixed;
   width: 100%;
   box-shadow: 0px 4px 5px 5px rgba(0,0,0,0.48);
   z-index:1;
   font-size: 2vw;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.navEndL {
+  margin-left: 3rem;
+}
+
+.navEndR {
+  margin-right: 3rem;
 }
 
 .correct {

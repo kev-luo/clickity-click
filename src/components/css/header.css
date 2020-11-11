@@ -1,26 +1,7 @@
 .container {
-  position: relative;
+  margin-top:5rem;
 }
 
-.background {
-  width: 100%;
-  height: auto;
-}
-
-.title {
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-}
-
-.subtitle {
-  top: 65%;
-  left: 50%;
-}
-
-.text {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 2px 2px 5px black;
+.jumbotron {
+  background-color: rgb(208, 225, 225)
 }

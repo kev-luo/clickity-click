@@ -6,7 +6,6 @@ export default function Navbar({ score, topScore, banner }) {
   let [colorFeedback, setColorFeedback] = useState('');
   
   useEffect(() => {
-    console.log('hello')
     if (banner === 'Womp Womp...') {
       setColorFeedback('wrong');
     } else if (banner === 'Correct!') {
@@ -21,10 +20,10 @@ export default function Navbar({ score, topScore, banner }) {
   }, [score])
 
   return (
-    <nav className='navbar'>
-      <div>Clicky Game</div>
+    <nav className='navigation'>
+      <div className='navEndL'>Clicky Game</div>
       <div onAnimationEnd={() => setColorFeedback('')} className={`${colorFeedback}`}>{ banner }</div>
-      <div>Score: { score } | Top Score: { topScore }    </div>
+      <div className='navEndR'>Score: { score } | Top Score: { topScore }    </div>
     </nav>
   );
 }
