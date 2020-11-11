@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import picData from './components/picData'
+import picShuffle from './components/utils/picShuffle'
 
 import Navbar from './components/Navbar'
 import Header from './components/Header'
@@ -15,24 +16,39 @@ function App() {
   function handleClick(id) {
     let pic = data[id-1];
     if (pic.clicked === true) {
-      return setData(picData);
-    } else {
-      let updateData = data.map(img => {
-        if (img.id === id) {
-          img.clicked = true
-        }
-        return img
+      return setData(prevData => {
+        return prevData.map(img => {
+          img.clicked = false;
+          return img
+        })
       })
-      
-      return setData(updateData)
+    } else {
+      return setData(prevData => {
+        return prevData.map(img => {
+          if (img.id === id) {
+            img.clicked = true;
+          };
+          return img
+        })
+      })
     }
   }
+  console.log(data);
+
+  let imagesCopy = [...data]
+  let randomizedImages = picShuffle(imagesCopy).map(image => {
+    return (
+      <Pictures handleClick={handleClick} key={image.id} url={image.url} id={image.id} />
+    )
+  });
 
   return (
     <>
       <Navbar score={ score } topScore={ topScore }/>
       <Header />
-      <PictureContainer images={ data } />
+      <PictureContainer>
+        { randomizedImages }
+      </PictureContainer>
     </>
   );
 }
