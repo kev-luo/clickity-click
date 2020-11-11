@@ -21,9 +21,14 @@ export default function Navbar({ score, topScore, banner }) {
 
   return (
     <nav className='navigation'>
-      <a href="/" className='navEndL'>Clicky Game</a>
-      <div onAnimationEnd={() => setColorFeedback('')} className={`${colorFeedback}`}>{ banner }</div>
-      <div className='navEndR'>Score: { score } | Top Score: { topScore }    </div>
+      <a href="/clickity-click" className='navEndL'>Clicky Game</a>
+      <div 
+        onAnimationEnd={() => setColorFeedback('')} 
+        className={`${colorFeedback}`}
+      >
+        { banner }
+      </div>
+      <div className='navEndR'>Score: { score } | Top Score: { topScore }</div>
     </nav>
   );
 }

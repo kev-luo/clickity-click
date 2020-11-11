@@ -50,13 +50,22 @@ function App() {
   let imagesCopy = [...data]
   let randomizedImages = picShuffle(imagesCopy).map(image => {
     return (
-      <Pictures handleClick={handleClick} key={image.id} url={image.url} id={image.id} />
+      <Pictures 
+        handleClick={handleClick} 
+        key={image.id} 
+        url={image.url} 
+        id={image.id} 
+      />
     )
   });
 
   return (
     <>
-      <Navbar score={ score } topScore={ topScore } banner={ banner }/>
+      <Navbar 
+        score={ score } 
+        topScore={ topScore } 
+        banner={ banner }
+      />
       <Header />
       <PictureContainer shake={ banner }>
         { randomizedImages }
