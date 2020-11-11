@@ -13,6 +13,12 @@ function App() {
   const [score, setScore] = useState(0);
   const [topScore, setTopScore] = useState(0);
 
+  function checkTopScore() {
+    if (score >= topScore) {
+      setTopScore(prevTopScore => prevTopScore + 1)
+    }
+  }
+
   function handleClick(id) {
     let pic = data[id-1];
     if (pic.clicked === true) {
@@ -25,7 +31,8 @@ function App() {
       })
     } 
     else {
-      setScore(prevScore => prevScore + 1)
+      setScore(prevScore => prevScore + 1);
+      checkTopScore();
       setData(prevData => {
         return prevData.map(img => {
           if (img.id === id) {

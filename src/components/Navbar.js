@@ -6,7 +6,7 @@ export default function Navbar({ score, topScore }) {
     <nav className='navbar'>
       <div>Clicky Game</div>
       <div>Click an image to begin!</div>
-      <div>Score: { score } | Top Score: 0</div>
+      <div>Score: { score } | Top Score: { topScore }    </div>
     </nav>
   );
 }
