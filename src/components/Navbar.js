@@ -17,11 +17,11 @@ export default function Navbar({ score, topScore, banner }) {
     return () => {
       setColorFeedback('');
     }
-  }, [score])
+  }, [score, banner])
 
   return (
     <nav className='navigation'>
-      <div className='navEndL'>Clicky Game</div>
+      <a href="/" className='navEndL'>Clicky Game</a>
       <div onAnimationEnd={() => setColorFeedback('')} className={`${colorFeedback}`}>{ banner }</div>
       <div className='navEndR'>Score: { score } | Top Score: { topScore }    </div>
     </nav>
