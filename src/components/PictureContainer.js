@@ -1,11 +1,11 @@
 import React from 'react'
-import Pictures from './Pictures'
 import './css/picContainer.css'
 
 export default function PictureContainer(props) {
+  let shakeFrames = (props.shake === 'Womp Womp...');
 
   return (
-    <div className='picContainer'>
+    <div className={`${shakeFrames ? "shake " : ""}picContainer`}>
       { props.children }
     </div>
   )

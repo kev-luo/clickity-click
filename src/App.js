@@ -23,7 +23,7 @@ function App() {
   function handleClick(id) {
     let pic = data[id-1]; // find clicked image
     if (pic.clicked === true) { // if already clicked then reset everything
-      setBanner('Womp Womp');
+      setBanner('Womp Womp...');
       setScore(prevScore => prevScore - prevScore);
       setData(prevData => {
         return prevData.map(img => {
@@ -58,7 +58,7 @@ function App() {
     <>
       <Navbar score={ score } topScore={ topScore } banner={ banner }/>
       <Header />
-      <PictureContainer>
+      <PictureContainer shake={ banner }>
         { randomizedImages }
       </PictureContainer>
     </>
