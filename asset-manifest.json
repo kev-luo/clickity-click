@@ -1,20 +1,32 @@
 {
   "files": {
     "main.css": "/clickity-click/static/css/main.829486b5.chunk.css",
-    "main.js": "/clickity-click/static/js/main.dade3d8d.chunk.js",
-    "main.js.map": "/clickity-click/static/js/main.dade3d8d.chunk.js.map",
+    "main.js": "/clickity-click/static/js/main.66df40ef.chunk.js",
+    "main.js.map": "/clickity-click/static/js/main.66df40ef.chunk.js.map",
     "runtime-main.js": "/clickity-click/static/js/runtime-main.e5b8b467.js",
     "runtime-main.js.map": "/clickity-click/static/js/runtime-main.e5b8b467.js.map",
     "static/js/2.d2b3a16d.chunk.js": "/clickity-click/static/js/2.d2b3a16d.chunk.js",
     "static/js/2.d2b3a16d.chunk.js.map": "/clickity-click/static/js/2.d2b3a16d.chunk.js.map",
     "index.html": "/clickity-click/index.html",
     "static/css/main.829486b5.chunk.css.map": "/clickity-click/static/css/main.829486b5.chunk.css.map",
-    "static/js/2.d2b3a16d.chunk.js.LICENSE.txt": "/clickity-click/static/js/2.d2b3a16d.chunk.js.LICENSE.txt"
+    "static/js/2.d2b3a16d.chunk.js.LICENSE.txt": "/clickity-click/static/js/2.d2b3a16d.chunk.js.LICENSE.txt",
+    "static/media/alakazam.8654a253.png": "/clickity-click/static/media/alakazam.8654a253.png",
+    "static/media/bulbasaur.05396597.png": "/clickity-click/static/media/bulbasaur.05396597.png",
+    "static/media/charmandar.bd62f584.png": "/clickity-click/static/media/charmandar.bd62f584.png",
+    "static/media/dragonite.a56e1373.png": "/clickity-click/static/media/dragonite.a56e1373.png",
+    "static/media/hitmonchan.12a2786f.png": "/clickity-click/static/media/hitmonchan.12a2786f.png",
+    "static/media/kangaskhan.5218c471.png": "/clickity-click/static/media/kangaskhan.5218c471.png",
+    "static/media/lugia.4eabf450.png": "/clickity-click/static/media/lugia.4eabf450.png",
+    "static/media/moltres.6e4b043a.png": "/clickity-click/static/media/moltres.6e4b043a.png",
+    "static/media/nidoking.b246c66b.png": "/clickity-click/static/media/nidoking.b246c66b.png",
+    "static/media/snorlax.cc60ce1f.png": "/clickity-click/static/media/snorlax.cc60ce1f.png",
+    "static/media/squirtle.97491e2b.png": "/clickity-click/static/media/squirtle.97491e2b.png",
+    "static/media/steelix.bf1486c6.png": "/clickity-click/static/media/steelix.bf1486c6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e5b8b467.js",
     "static/js/2.d2b3a16d.chunk.js",
     "static/css/main.829486b5.chunk.css",
-    "static/js/main.dade3d8d.chunk.js"
+    "static/js/main.66df40ef.chunk.js"
   ]
 }
