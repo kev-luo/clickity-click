@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/kev-luo/clickity-click/static/css/main.829486b5.chunk.css",
+    "main.js": "/kev-luo/clickity-click/static/js/main.dade3d8d.chunk.js",
+    "main.js.map": "/kev-luo/clickity-click/static/js/main.dade3d8d.chunk.js.map",
+    "runtime-main.js": "/kev-luo/clickity-click/static/js/runtime-main.e884c720.js",
+    "runtime-main.js.map": "/kev-luo/clickity-click/static/js/runtime-main.e884c720.js.map",
+    "static/js/2.d2b3a16d.chunk.js": "/kev-luo/clickity-click/static/js/2.d2b3a16d.chunk.js",
+    "static/js/2.d2b3a16d.chunk.js.map": "/kev-luo/clickity-click/static/js/2.d2b3a16d.chunk.js.map",
+    "index.html": "/kev-luo/clickity-click/index.html",
+    "static/css/main.829486b5.chunk.css.map": "/kev-luo/clickity-click/static/css/main.829486b5.chunk.css.map",
+    "static/js/2.d2b3a16d.chunk.js.LICENSE.txt": "/kev-luo/clickity-click/static/js/2.d2b3a16d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e884c720.js",
+    "static/js/2.d2b3a16d.chunk.js",
+    "static/css/main.829486b5.chunk.css",
+    "static/js/main.dade3d8d.chunk.js"
+  ]
+}
