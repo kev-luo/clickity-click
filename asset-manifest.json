@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/clickity-click/static/css/main.829486b5.chunk.css",
-    "main.js": "/clickity-click/static/js/main.66df40ef.chunk.js",
-    "main.js.map": "/clickity-click/static/js/main.66df40ef.chunk.js.map",
+    "main.css": "/clickity-click/static/css/main.a8d27801.chunk.css",
+    "main.js": "/clickity-click/static/js/main.941bb723.chunk.js",
+    "main.js.map": "/clickity-click/static/js/main.941bb723.chunk.js.map",
     "runtime-main.js": "/clickity-click/static/js/runtime-main.e5b8b467.js",
     "runtime-main.js.map": "/clickity-click/static/js/runtime-main.e5b8b467.js.map",
     "static/js/2.d2b3a16d.chunk.js": "/clickity-click/static/js/2.d2b3a16d.chunk.js",
     "static/js/2.d2b3a16d.chunk.js.map": "/clickity-click/static/js/2.d2b3a16d.chunk.js.map",
     "index.html": "/clickity-click/index.html",
-    "static/css/main.829486b5.chunk.css.map": "/clickity-click/static/css/main.829486b5.chunk.css.map",
+    "static/css/main.a8d27801.chunk.css.map": "/clickity-click/static/css/main.a8d27801.chunk.css.map",
     "static/js/2.d2b3a16d.chunk.js.LICENSE.txt": "/clickity-click/static/js/2.d2b3a16d.chunk.js.LICENSE.txt",
     "static/media/alakazam.8654a253.png": "/clickity-click/static/media/alakazam.8654a253.png",
     "static/media/bulbasaur.05396597.png": "/clickity-click/static/media/bulbasaur.05396597.png",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.e5b8b467.js",
     "static/js/2.d2b3a16d.chunk.js",
-    "static/css/main.829486b5.chunk.css",
-    "static/js/main.66df40ef.chunk.js"
+    "static/css/main.a8d27801.chunk.css",
+    "static/js/main.941bb723.chunk.js"
   ]
 }
