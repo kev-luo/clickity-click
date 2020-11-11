@@ -16,14 +16,17 @@ function App() {
   function handleClick(id) {
     let pic = data[id-1];
     if (pic.clicked === true) {
-      return setData(prevData => {
+      setScore(prevScore => prevScore - prevScore)
+      setData(prevData => {
         return prevData.map(img => {
           img.clicked = false;
           return img
         })
       })
-    } else {
-      return setData(prevData => {
+    } 
+    else {
+      setScore(prevScore => prevScore + 1)
+      setData(prevData => {
         return prevData.map(img => {
           if (img.id === id) {
             img.clicked = true;
@@ -33,7 +36,6 @@ function App() {
       })
     }
   }
-  console.log(data);
 
   let imagesCopy = [...data]
   let randomizedImages = picShuffle(imagesCopy).map(image => {
