@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import picData from './components/picData'
+import picData from './components/utils/picData'
 import picShuffle from './components/utils/picShuffle'
 
 import Navbar from './components/Navbar'

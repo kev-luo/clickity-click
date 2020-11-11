@@ -10,3 +10,21 @@
   z-index:1;
   font-size: 2vw;
 }
+
+.correct {
+  animation: correct 0.3s;
+}
+
+.wrong {
+  animation: wrong 0.3s;
+}
+
+@keyframes correct {
+  from {color: white;}
+  to {color: green;}
+}
+
+@keyframes wrong {
+  from {color: white;}
+  to {color: red;}
+}
