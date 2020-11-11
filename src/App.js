@@ -12,25 +12,28 @@ function App() {
   const [data, setData] = useState([...picData]);
   const [score, setScore] = useState(0);
   const [topScore, setTopScore] = useState(0);
+  const [banner, setBanner] = useState('Click An Image to Begin!');
 
   function checkTopScore() {
     if (score >= topScore) {
       setTopScore(prevTopScore => prevTopScore + 1)
-    }
-  }
+    };
+  };
 
   function handleClick(id) {
-    let pic = data[id-1];
-    if (pic.clicked === true) {
-      setScore(prevScore => prevScore - prevScore)
+    let pic = data[id-1]; // find clicked image
+    if (pic.clicked === true) { // if already clicked then reset everything
+      setBanner('Womp Womp');
+      setScore(prevScore => prevScore - prevScore);
       setData(prevData => {
         return prevData.map(img => {
           img.clicked = false;
           return img
-        })
-      })
-    } 
+        });
+      });
+    }
     else {
+      setBanner('Correct!');
       setScore(prevScore => prevScore + 1);
       checkTopScore();
       setData(prevData => {
@@ -39,10 +42,10 @@ function App() {
             img.clicked = true;
           };
           return img
-        })
-      })
-    }
-  }
+        });
+      });
+    };
+  };
 
   let imagesCopy = [...data]
   let randomizedImages = picShuffle(imagesCopy).map(image => {
@@ -53,7 +56,7 @@ function App() {
 
   return (
     <>
-      <Navbar score={ score } topScore={ topScore }/>
+      <Navbar score={ score } topScore={ topScore } banner={ banner }/>
       <Header />
       <PictureContainer>
         { randomizedImages }
